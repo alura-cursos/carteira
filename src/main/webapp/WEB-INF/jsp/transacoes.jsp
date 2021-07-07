@@ -9,7 +9,38 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="text-center">Lista de Transacoes</h1>
+		<h2 class="text-center">Cadastro de Transacao</h2>
+		<form method="post" action="<c:url value="/transacoes"/>">
+			<div class="form-group">
+				<label>TICKER</label>
+				<input name="ticker" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>PRECO</label>
+				<input name="preco" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>QUANTIDADE</label>
+				<input name="quantidade" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>DATA(dd/mm/yyyy)</label>
+				<input name="data" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>TIPO(COMPRA OU VENDA)</label>
+				<input name="tipo" class="form-control">
+			</div>
+			
+			<input type="submit" value="Salvar" class="btn btn-primary mt-1">
+		</form>
+		
+		<h2 class="text-center">Lista de Transacoes</h2>
+	
 		<table class="table table-striped table-bordered table-hover">
 			<thead>
 				<tr>
